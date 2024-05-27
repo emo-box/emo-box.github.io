@@ -5,11 +5,11 @@
         <meta charset="utf-8">
 
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>VALUE</title>
+        <title>EmoBox</title>
         <meta name="description" content="EmoBox: Multilingual Multi-corpus Speech Emotion Recognition
         Toolkit and Benchmark">
         <meta name="keywords" content="Speech emotion recognition, Toolkit, Benchmark, Cross-corpus">
-        <meta name="author" content="VALUE">
+        <meta name="author" content="EmoBox">
         <script type="application/ld+json">
             {
                 "@context":"https://schema.org/",
@@ -136,7 +136,7 @@
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="index.html"><b>VALUE</b></a>
+                <a class="navbar-brand" href="index.html"><b>EmoBox</b></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#content" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -146,19 +146,19 @@
                         <li class="nav-item active">
                             <a class="nav-link" href="index.html"><b>Home</b></a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link" href="https://github.com/VALUE-Leaderboard/StarterCode" target="_blank">Code</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="https://github.com/VALUE-Leaderboard/DataRelease" target="_blank">Download</a>
-                        </li>
-                        <li class="nav-item">
+                        </li> -->
+                        <!-- <li class="nav-item">
                             <a class="nav-link" href="tasks.html">Tasks</a>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <a class="nav-link" href="leaderboard.html">Leaderboard</a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link" href="challenge_2021.html">Challenge</a>
                         </li>
                         <li class="nav-item">
@@ -169,86 +169,55 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="people.html">People</a>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div>
         </nav>
+        
 
         <div class="jumbotron">
             <div class="container">
-            <h1 class="display-5 sharepoint-dark-blue">Meet VALUE!</h1>
-            <p class="lead sharepoint-dark-blue">A Comprehensive Benchmark for <b>V</b>ideo-<b>A</b>nd-<b>L</b>anguage <b>U</b>nderstanding <b>E</b>valuation.</p>
+            <h1 class="display-5 sharepoint-dark-blue">Meet EmoBox!</h1>
+            <p class="lead sharepoint-dark-blue">A Multilingual Multi-corpus Speech Emotion Recognition
+                Toolkit and Benchmark.
             </div>
         </div>
 
         <div class="container" align="justify">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
-                    <h4>Why VALUE?</h4>
+                    <h4>What is EmoBox?</h4>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">      
+                    <p><b>EmoBox</b>, a groundbreaking multilingual multi-corpus speech emotion recognition toolkit designed to streamline research in this field. EmoBox is accompanied by a meticulously curated benchmark tailored for both intra-corpus and cross-corpus evaluation settings.</p>
+
+                    EmoBox consists of: </p>
+                    <ul>
+                        <li>For intra-corpus evaluations, we have devised a systematic approach to data partitioning across various datasets, ensuring that researchers can conduct rigorous and comparable analyses of different SER models.</li>
+                        <li> For the cross-corpus evaluations, we leverage a foundational SER model, <i>emotion2vec</i>, to address annotation discrepancies and create a test set that achieves
+                            a balance in speaker and emotion distribution, a feat previously unattained in SER research.</li>
+                    </ul>
+                        
+                    <p>Based on EmoBox, we present the intra-corpus SER results of 10 pre-trained speech models on 32 emotion datasets with 14 languages, and the cross-corpus SER results on 4 datasets with the fully balanced test sets. To the best of our knowledge, this is the largest SER benchmark, across language scopes and quantity scales. We hope that our toolkit and benchmark can facilitate the research of SER in the community</p>
+                </div>
+            </div>
+        </div>
+            
+        <br/>
+
+        <div class="container" align="justify">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                    <h4>Why EmoBox?</h4>
                     <hr>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 thumb">
-                    <div class="card">
-                        <div class="card-body">
-                            <center><span class="fa-4x ms-blue">
-                                <!-- <i class="fas fa-video"></i> -->
-                                <i class="fas fa-photo-video"></i>
-                                <i class="far fa-closed-captioning"></i>
-                            </span></center>
-                            
-                            <!-- <img src="image/multilingual.png" class="center" style="height:6rem; width:6rem;"/> -->
-                            <br/>
-                            <center><h5 class="card-title">Multi-channel Video</h5>
-                            <p class="card-text"><font size="3rem">With both <b>Video Frames</b> and <b>Subtitle/ASR</b></font></p></center>
-                            <br/>
-                        </div>
-                    </div>
-                    <br/>
-                </div>
-
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 thumb">
-                    <div class="card">
-                        <div class="card-body">
-                            <!-- <img src="image/coverage.png" class="center" style="height:6rem; width:6rem;"/>
-                            <br/> -->
-                            <center><span class="fa-4x">
-                                <i class="fab fa-youtube youtube-red"></i>
-                                <i class="fas fa-tv ms-blue"></i>
-                                <i class="fas fa-film ms-blue"></i>
-                            </span></center>
-                            <br/>
-                            <center><h5 class="card-title">Diverse Video Domain</h5>
-                            <p class="card-text"><font size="3rem">Diverse video content from <b>YouTube</b>, <b>TV Episodes</b> and <b>Movie Clips</b></font></p></center>
-                        </div>
-                    </div>
-                    <br/>
-                </div>
-
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 thumb">
-                    <div class="card">
-                        <div class="card-body">
-                            <!-- <img src="image/largescale.png" class="center" style="height:6rem; width:6rem;"/> -->
-                            <center>
-                                <!-- <span class="fa-4x"> -->
-                                <!-- <i class="fas fa-search ms-blue"></i> -->
-                                <img src="image/retrieval.png" style="height:5rem;"/>
-                                <img src="image/qa.png" style="height:5rem;"/>
-                                <img src="image/caption.png" style="height:5rem;"/>
-                                <!-- <i class="fas fa-video ms-blue"></i>
-                                <i class="fas fa-language ms-blue"></i> -->
-                            <!-- </span> -->
-                            </center>
-                            <br/>
-                            <center><h5 class="card-title">Various Datasets over Representative Tasks</h5>
-                            <p class="card-text"><font size="3rem"><b>11</b> datasets over <b>3</b> tasks: <b>Retrieval</b>, <b>Question Answering</b> and <b>Captioning</b>.</font></p></center>
-                        </div>
-                    </div>
-                    <br/>
-                </div>
 
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 thumb">
                     <div class="card">
@@ -259,7 +228,7 @@
                             </span></center> -->
                             <br/>
                             <center><h5 class="card-title">Leaderboard!</h5>
-                            <p class="card-text"><font size="3rem">To track the advances in Video-and-Langauge research.</font></p></center>
+                            <p class="card-text"><font size="3rem">To track the advances in SER research.</font></p></center>
                         </div>
                     </div>
                     <br/>
@@ -269,27 +238,7 @@
 
         <br/>
 
-        <div class="container" align="justify">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
-                    <h4>What is VALUE?</h4>
-                    <hr>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">                
-                    <p>The <b>V</b>ideo-<b>A</b>nd-<b>L</b>anguage <b>U</b>nderstanding <b>E</b>valuation (VALUE) benchmark is a collection of resources for training, evaluating, and analyzing systems for understanding both video and subtitles. VALUE consists of: </p>
-                    <ul>
-                        <li>A benchmark of 11 video and language tasks built on established existing datasets and selected to cover a diverse range of dataset sizes, video genres, degrees of difficulty and task types</li>
-                        <li>A public leaderboard for tracking performance on the benchmark</li>
-                    </ul>
-                        
-                    <p>The format of the VALUE benchmark is model-agnostic, so any system capable of processing multi-channel video (video+subtitle) + natural langugage sentence pairs and producing corresponding predictions is eligible to participate. The ultimate goal of VALUE is to drive research in the development of general and robust video+language understanding systems.</p>
-                </div>
-            </div>
-        </div>
-            
-        <br/>
+        
 
 
         <div class="container" align="justify">
@@ -299,130 +248,18 @@
                     <hr>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
-                    <a href="https://arxiv.org/abs/2106.04632" target="_blank">
-                        <img src="image/paper.png" class="rounded img-fluid mx-auto d-block" border="5"/>
-                    </a>
-                </div>
+
 
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
-                        <h6>Please cite our paper as below if you use the VALUE benchmark or starter code.</h6>
+                        <h6>Please cite our paper as below if you use the EmoBox tookit and benchmark.</h6>
                         <pre><code>
-@InProceedings{li2021value,
-title={VALUE: A Multi-Task Benchmark for Video-and-Language Understanding Evaluation},
-author={Li, Linjie and Lei, Jie and Gan, Zhe and Yu, Licheng and Chen, Yen-Chun and Pillai, Rohit
-        and Cheng, Yu and Zhou, Luowei and Wang, Xin Eric and Wang, William Yang and others},
-booktitle = {35th Conference on Neural Information Processing Systems (NeurIPS 2021) Track on Datasets and Benchmarks},
-year = {2021}
+@InProceedings{emobox,
+title={EmoBox: Multilingual Multi-corpus Speech Emotion Recognition Toolkit and Benchmark},
+author={Ziyang Ma and Mingjie Chen and Hezhao Zhang and Zhisheng Zheng and Wenxi Chen and Xiquan Li and JiaXin Ye and Xie Chen and Thomas Hain },
+booktitle = {arxiv},
+year = {2024}
 } 
-                        </code></pre>
-                        <h6>We sincerely thank all dataset contributors to VALUE benchmark, please cite the following datasets if you use the VALUE benchmark.</h6>
-                        <button type="button" class="btn btn-light" onclick="hide_display_citation_div(this.id)" id="button_bibtex_tvr">TVR</button>
-                        <button type="button" class="btn btn-light" onclick="hide_display_citation_div(this.id)" id="button_bibtex_how2r">How2R</button>
-                        <button type="button" class="btn btn-light" onclick="hide_display_citation_div(this.id)" id="button_bibtex_youcook2">YouCook2</button>
-                        <button type="button" class="btn btn-light" onclick="hide_display_citation_div(this.id)" id="button_bibtex_vatex">VATEX</button>
-                        <button type="button" class="btn btn-light" onclick="hide_display_citation_div(this.id)" id="button_bibtex_tvqa">TVQA</button>
-                        <button type="button" class="btn btn-light" onclick="hide_display_citation_div(this.id)" id="button_bibtex_how2qa">How2QA</button>
-                        <button type="button" class="btn btn-light" onclick="hide_display_citation_div(this.id)" id="button_bibtex_violin">VIOLIN</button>
-                        <button type="button" class="btn btn-light" onclick="hide_display_citation_div(this.id)" id="button_bibtex_vlep">VLEP</button>
-                        <button type="button" class="btn btn-light" onclick="hide_display_citation_div(this.id)" id="button_bibtex_tvc">TVC</button>
-                        <div style="display: none;" id="bibtex_tvqa">
-                            <pre><code>
-@inproceedings{lei2018tvqa,
-    title={TVQA: Localized, Compositional Video Question Answering},
-    author={Lei, Jie and Yu, Licheng and Bansal, Mohit and Berg, Tamara L},
-    booktitle={EMNLP},
-    year={2018}
-    }
-                            </code></pre>
-                        </div>
-                        <div style="display: none;" id="bibtex_tvr">
-                            <pre><code>
-@inproceedings{lei2020tvr,
-    title={TVR: A Large-Scale Dataset for Video-Subtitle Moment Retrieval},
-    author={Lei, Jie and Yu, Licheng and Berg, Tamara L and Bansal, Mohit},
-    booktitle={ECCV},
-    year={2020}
-    }
-                            </code></pre>
-                        </div>
-                        <div style="display: none;" id="bibtex_tvc">
-                            <pre><code>
-@inproceedings{lei2020tvr,
-    title={TVR: A Large-Scale Dataset for Video-Subtitle Moment Retrieval},
-    author={Lei, Jie and Yu, Licheng and Berg, Tamara L and Bansal, Mohit},
-    booktitle={ECCV},
-    year={2020}
-    }
-                            </code></pre>
-                        </div>
-                        <div style="display: none;" id="bibtex_how2r">
-                             <pre><code>
-@inproceedings{li2020hero,
-title={HERO: Hierarchical Encoder for Video+ Language Omni-representation Pre-training},
-author={Li, Linjie and Chen, Yen-Chun and Cheng, Yu and Gan, Zhe and Yu, Licheng and Liu, Jingjing},
-booktitle={EMNLP},
-year={2020}
-}
-                            </code></pre>
-                        </div>
-                        <div style="display: none;" id="bibtex_how2qa">
-                            <pre><code>
-@inproceedings{li2020hero,
-title={HERO: Hierarchical Encoder for Video+ Language Omni-representation Pre-training},
-author={Li, Linjie and Chen, Yen-Chun and Cheng, Yu and Gan, Zhe and Yu, Licheng and Liu, Jingjing},
-booktitle={EMNLP},
-year={2020}
-}
-                            </code></pre>
-                        </div>
-                        <div style="display: none;" id="bibtex_youcook2">
-                            <pre><code>
-@inproceedings{ZhXuCoAAAI18,
-    author={Zhou, Luowei and Xu, Chenliang and Corso, Jason J},
-    title = {Towards Automatic Learning of Procedures From Web Instructional Videos},
-    booktitle = {AAAI},
-    year = {2018}
-}
-@inproceedings{ZhZhCoCVPR2018,
-    title={End-to-End Dense Video Captioning with Masked Transformer},
-    author={Zhou, Luowei and Zhou, Yingbo and Corso, Jason J and Socher, Richard and Xiong, Caiming},
-    booktitle={CVPR},
-    year={2018}
-}
-                            </code></pre>
-                        </div>
-                        <div style="display: none;" id="bibtex_vatex">
-                            <pre><code>
-@InProceedings{Wang_2019_ICCV,
-    author = {Wang, Xin and Wu, Jiawei and Chen, Junkun and Li, Lei and Wang, Yuan-Fang and Wang, William Yang},
-    title = {VaTeX: A Large-Scale, High-Quality Multilingual Dataset for Video-and-Language Research},
-    booktitle = {ICCV},
-    year = {2019}
-    }
-                            </code></pre>
-                        </div>
-                        <div style="display: none;" id="bibtex_vlep">
-                            <pre><code>
-@inproceedings{lei2020vlep,
-    title={What is More Likely to Happen Next? Video-and-Language Future Event Prediction},
-    author={Lei, Jie and Yu, Licheng and Berg, Tamara L and Bansal, Mohit},
-    booktitle={EMNLP},
-    year={2020}
-    }
-                            </code></pre>
-                        </div>
-                        <div style="display: none;" id="bibtex_violin">
-                            <pre><code>
-@inproceedings{liu2020violin,
-    title={Violin: A large-scale dataset for video-and-language inference},
-    author={Liu, Jingzhou and Chen, Wenhu and Cheng, Yu and Gan, Zhe and Yu, Licheng and Yang, Yiming and Liu, Jingjing},
-    booktitle={CVPR},
-    year={2020}
-    }
-                            </code></pre>
-                        </div>
+
                 </div>
             </div>
 
@@ -447,7 +284,7 @@ year={2020}
                     </a>
                     <br/>
                     <center>
-                        <h6>Have any questions or suggestions? Feel free to reach us at value-benchmark@googlegroups.com!</h6></center>
+                        <h6>Have any questions or suggestions? Feel free to reach us at XX@.com!</h6></center>
                 </div>
             </div>
 
