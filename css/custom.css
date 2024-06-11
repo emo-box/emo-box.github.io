@@ -160,6 +160,7 @@ html {
   
   table th {
      text-align: center; 
+     white-space: nowrap;
   }
   
   table td {
@@ -197,6 +198,7 @@ html {
     max-height: 100px;
     padding: 10px;
     vertical-align: middle;
+    white-space: nowrap
   }
   .performanceTableWide .wBackground{
     background-color:#f3f3f3;
@@ -231,6 +233,7 @@ html {
     text-align: center;
     max-width: 100px;
     vertical-align: middle;
+    white-space: nowrap
   }
   .performanceTable .wBackground{
     background-color:#f3f3f3;
@@ -276,5 +279,6 @@ html {
     padding-bottom:12px;
     text-align:center;
     background-color:#00A4EF;
+    white-space: nowrap;
     /* opacity:0.5; */
     color:white}
