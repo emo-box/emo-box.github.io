@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>VALUE</title>
+        <meta name="description" content="EmoBox: Multilingual Multi-corpus Speech Emotion Recognition
+        Toolkit and Benchmark">
+        <meta name="keywords" content="Speech emotion recognition, Toolkit, Benchmark, Cross-corpus">
+        <meta name="author" content="EmoBox">
+
+        <link rel="icon" href="image/favicon.ico">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/custom.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+          <div class="container">
+            <a class="navbar-brand" href="index.html"><b>EmoBox</b></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#content" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="content">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html"><b>Home</b></a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/VALUE-Leaderboard/StarterCode" target="_blank">Code</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/VALUE-Leaderboard/DataRelease" target="_blank">Download</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tasks.html">Tasks</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="leaderboard.html">Leaderboard</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="challenge_2021.html">Challenge</a>
+                    
+                    <!-- <li class="nav-item dropdown"> -->
+                        <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Challenge</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="challenge_2021.html">VALUE Challenge 2021</a>
+                    </li> -->
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="submission.html">Submission</a>
+                    </li>                       
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://arxiv.org/pdf/2106.04632.pdf" target="_blank">Paper</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="people.html">People</a>
+                    </li> -->
+                    
+                </ul>
+            </div>
+        </div>
+        </nav>
+
+        <br/>
+        <br/>
+
+        <!-- <div class="container" align="justify">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                    <center><h3>Welcome to V<font size="4rem">A</font>T<font size="4rem">E</font>X Captioning Challenge 2019!</h3></center>
+                </div>
+            </div>
+        </div> 
+
+        <br/> -->
+
+        <div class="container" align="justify">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                    <h4>Leaderboard</h4>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                    <h5>Offical Leaderboard</h5>
+                </div> -->
+
+                <br/>
+
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                    <!-- <h6>Use the tabs below to navigate to the corresponding leaderboard for each task. </h6> -->
+
+                    <p>If you would like to report your results here, please follow instructions at <a href="https://github.com/VALUE-Leaderboard/VALUE-Leaderboard.github.io/blob/master/README.md#show-your-results-on-our-leaderboard" target="_blank">VALUE website GitHub repository</a>. All results must have a submission entry on CodaLab. </p>
+                    <p>The VALUE leaderboard compiles results from task-agnostic models which can be applied to all three tasks. For task-specific models that works on a single type of tasks, please use the tabs below to navigate to the corresponding leaderboard.</p>
+                </div>
+
+                <br/><br/><br/>
+
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" >
+                            <a class="nav-link active" id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="all" aria-selected="true">ALL</a></li>
+
+    
+                        <li class="nav-item">
+                            <a class="nav-link" id="aesdd-tab" data-toggle="tab" href="#aesdd" role="tab" aria-controls="aesdd" aria-selected="false">AESDD</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="ased-tab" data-toggle="tab" href="#ased" role="tab" aria-controls="ased" aria-selected="false">ASED</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="asvp-esd-tab" data-toggle="tab" href="#asvp-esd" role="tab" aria-controls="asvp-esd" aria-selected="false">ASVP-ESD</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="aesdd-tab" data-toggle="tab" href="#aesdd" role="tab" aria-controls="aesdd" aria-selected="false">CaFE</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="aesdd-tab" data-toggle="tab" href="#aesdd" role="tab" aria-controls="aesdd" aria-selected="false">CASIA</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="aesdd-tab" data-toggle="tab" href="#aesdd" role="tab" aria-controls="aesdd" aria-selected="false">CREMA-D</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="aesdd-tab" data-toggle="tab" href="#aesdd" role="tab" aria-controls="aesdd" aria-selected="false">EMNS</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="aesdd-tab" data-toggle="tab" href="#aesdd" role="tab" aria-controls="aesdd" aria-selected="false">EmoDB</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="aesdd-tab" data-toggle="tab" href="#aesdd" role="tab" aria-controls="aesdd" aria-selected="false">EmoV-DB</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="aesdd-tab" data-toggle="tab" href="#aesdd" role="tab" aria-controls="aesdd" aria-selected="false">EMOVO</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="aesdd-tab" data-toggle="tab" href="#aesdd" role="tab" aria-controls="aesdd" aria-selected="false">Emozionalmente</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="aesdd-tab" data-toggle="tab" href="#aesdd" role="tab" aria-controls="aesdd" aria-selected="false">eNTERFACE</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="aesdd-tab" data-toggle="tab" href="#aesdd" role="tab" aria-controls="aesdd" aria-selected="false">ESD</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="aesdd-tab" data-toggle="tab" href="#aesdd" role="tab" aria-controls="aesdd" aria-selected="false">IEMOCAP</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="aesdd-tab" data-toggle="tab" href="#aesdd" role="tab" aria-controls="aesdd" aria-selected="false">JL-Corpus</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="aesdd-tab" data-toggle="tab" href="#aesdd" role="tab" aria-controls="aesdd" aria-selected="false">M3ED</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="aesdd-tab" data-toggle="tab" href="#aesdd" role="tab" aria-controls="aesdd" aria-selected="false">MEAD</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="aesdd-tab" data-toggle="tab" href="#aesdd" role="tab" aria-controls="aesdd" aria-selected="false">MELD</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="aesdd-tab" data-toggle="tab" href="#aesdd" role="tab" aria-controls="aesdd" aria-selected="false">MER2023</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="aesdd-tab" data-toggle="tab" href="#aesdd" role="tab" aria-controls="aesdd" aria-selected="false">MESD</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="aesdd-tab" data-toggle="tab" href="#aesdd" role="tab" aria-controls="aesdd" aria-selected="false">MSP-Podcast</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="aesdd-tab" data-toggle="tab" href="#aesdd" role="tab" aria-controls="aesdd" aria-selected="false">Oreau</a></li>
+                            <li class="nav-item">
+                            <a class="nav-link" id="aesdd-tab" data-toggle="tab" href="#aesdd" role="tab" aria-controls="aesdd" aria-selected="false">PAVOQUE</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="aesdd-tab" data-toggle="tab" href="#aesdd" role="tab" aria-controls="aesdd" aria-selected="false">Polish</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="aesdd-tab" data-toggle="tab" href="#aesdd" role="tab" aria-controls="aesdd" aria-selected="false">RAVDESS</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="aesdd-tab" data-toggle="tab" href="#aesdd" role="tab" aria-controls="aesdd" aria-selected="false">RESD</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="aesdd-tab" data-toggle="tab" href="#aesdd" role="tab" aria-controls="aesdd" aria-selected="false">SAVEE</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="aesdd-tab" data-toggle="tab" href="#aesdd" role="tab" aria-controls="aesdd" aria-selected="false">ShEMO</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="aesdd-tab" data-toggle="tab" href="#aesdd" role="tab" aria-controls="aesdd" aria-selected="false">SUBESCO</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="aesdd-tab" data-toggle="tab" href="#aesdd" role="tab" aria-controls="aesdd" aria-selected="false">TESS</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="aesdd-tab" data-toggle="tab" href="#aesdd" role="tab" aria-controls="aesdd" aria-selected="false">TurEV-DB</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="aesdd-tab" data-toggle="tab" href="#aesdd" role="tab" aria-controls="aesdd" aria-selected="false">URDU</a></li>
+                    </ul>
+
+                    <br/>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="home-tab">
+                            <p>The models are ranked by the Mean-Rank, the average of model ranks over 11 tasks. We break ties using the Meta-Ave, the average of model performance across 11 tasks. AveR, accuracy and CiDER are used as evaluation metrics for Retrieval, QA and Captioning tasks, respectively.</p>
+                            <table class="table table-hover sortable  performanceTableWide" id="all_table">
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <colgroup span="4" class="wBackground"></colgroup>
+                                <colgroup span="4"></colgroup>
+                                <colgroup span="3" class="wBackground"></colgroup>
+                            <thead>
+                                <!-- <tr>
+                                <th rowspan="2" >Rank</th>
+                                <td rowspan="2" >Model</td>
+                                <td rowspan="2" >Meta-Average</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td colspan="4" >Retrieval</td>
+                                <td colspan="4" >QA</td>
+                                <td colspan="3" >Caption</td>
+                                </tr> -->
+                                <tr>
+                                    <!-- <th scope="row"></th>
+                                <td></td>
+                                <td></td> -->
+                                
+                                <th class="sorttable_nosort" scope="col">Rank</th>
+                                <th class="sorttable_nosort" scope="col">Model</th>
+                                <th scope="col">Mean-Rank</th>
+                                <th scope="col">Meta-Ave</th>
+                                <th scope="col">TVR</th>
+                                <th scope="col" >How2R</th>
+                                <th scope="col">YC2R</th>
+                                <th scope="col">VATEX-EN-R</th>
+                                <th scope="col">TVQA</th>
+                                <th scope="col">How2QA</th>
+                                <th scope="col">VIOLIN</th>
+                                <th scope="col">VLEP</th>
+                                <th scope="col">TVC</td>
+                                <th scope="col">YC2C</th>
+                                <th scope="col">VATEX-EN-C</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">
+                                        <p class="rank">-</p>
+                                        <span class="date badge badge-secondary">06/07/2021</span>
+                                    </th>
+                                    <td style="word-break:break-word;">
+                                        <b>Human</b>
+                                        <p class="institution">VALUE baseline</p>
+                                        <!-- <a href="" target="_blank">Paper</a>, <a href="" target="_blank">Code</a> -->
+                                    </td>
+                                    <td><b>-</b></td>
+                                    <td><b>-</b></td>
+
+                                    <td><b>-</b></td>
+                                    <td><b>-</b></td>
+                                    <td><b>-</b></td>
+                                    <td><b>-</b></td>
+
+                                    <td><b>89.41</b></td>
+                                    <td><b>90.32</b></td>
+                                    <td><b>91.39</b></td>
+                                    <td><b>90.50</b></td>
+
+                                    <td><b>62.89</b></td>
+                                    <td><b>-</b></td>
+                                    <td><b>62.66</b></td>
+                                </tr>
+
+                            </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="aesdd" role="tabpanel" aria-labelledby="aesdd-tab">
+                            <p>For the dataset <strong>AESDD (el)</strong>, we report the following results:</p>
+                            <table class="table table-hover sortable performanceTable">
+                                <thead>
+                                <tr>
+                                    <th class="sorttable_nosort" scope="col">Rank</th>
+                                    <th class="sorttable_nosort" scope="col">Model</th>
+                                    <th scope="col">UA</th>
+                                    <th scope="col">WA</th>
+                                    <th scope="col">F1</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>WavLM large</td>
+                                    <td>84.40</td>
+                                    <td>84.49</td>
+                                    <td>84.19</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Whisper large v3</td>
+                                    <td>79.13</td>
+                                    <td>79.18</td>
+                                    <td>79.13</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>HuBERT base</td>
+                                    <td>82.30</td>
+                                    <td>82.35</td>
+                                    <td>82.36</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>WavLM base</td>
+                                    <td>78.99</td>
+                                    <td>79.08</td>
+                                    <td>78.78</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>HuBERT large</td>
+                                    <td>78.85</td>
+                                    <td>78.90</td>
+                                    <td>78.88</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>data2vec 2.0 large</td>
+                                    <td>72.26</td>
+                                    <td>72.34</td>
+                                    <td>71.82</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>wav2vec 2.0 base</td>
+                                    <td>67.59</td>
+                                    <td>67.65</td>
+                                    <td>67.61</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>data2vec base</td>
+                                    <td>49.96</td>
+                                    <td>50.03</td>
+                                    <td>49.30</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>data2vec 2.0 base</td>
+                                    <td>46.55</td>
+                                    <td>46.68</td>
+                                    <td>45.33</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>data2vec large</td>
+                                    <td>45.63</td>
+                                    <td>45.69</td>
+                                    <td>44.65</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="ased" role="tabpanel" aria-labelledby="ased-tab">
+                            <p>For the dataset <strong>ASED (am)</strong>, we report the following results:</p>
+                            <table class="table table-hover sortable performanceTable">
+                                <thead>
+                                <tr>
+                                    <th class="sorttable_nosort" scope="col">Rank</th>
+                                    <th class="sorttable_nosort" scope="col">Model</th>
+                                    <th scope="col">UA</th>
+                                    <th scope="col">WA</th>
+                                    <th scope="col">F1</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Whisper large v3</td>
+                                    <td>96.75</td>
+                                    <td>96.73</td>
+                                    <td>96.74</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>WavLM large</td>
+                                    <td>96.44</td>
+                                    <td>96.45</td>
+                                    <td>96.42</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>HuBERT large</td>
+                                    <td>96.19</td>
+                                    <td>96.19</td>
+                                    <td>96.17</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>HuBERT base</td>
+                                    <td>94.17</td>
+                                    <td>94.13</td>
+                                    <td>94.13</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>WavLM base</td>
+                                    <td>94.27</td>
+                                    <td>94.31</td>
+                                    <td>94.29</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>data2vec 2.0 large</td>
+                                    <td>94.30</td>
+                                    <td>94.28</td>
+                                    <td>94.27</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>data2vec 2.0 base</td>
+                                    <td>93.99</td>
+                                    <td>93.99</td>
+                                    <td>93.98</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>data2vec large</td>
+                                    <td>88.31</td>
+                                    <td>88.31</td>
+                                    <td>88.30</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>wav2vec 2.0 base</td>
+                                    <td>88.59</td>
+                                    <td>88.63</td>
+                                    <td>88.63</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>data2vec base</td>
+                                    <td>86.39</td>
+                                    <td>86.34</td>
+                                    <td>86.34</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="asvp-esd" role="tabpanel" aria-labelledby="asvp-esd-tab">
+                            <p>For the dataset <strong>ASVP-ESD (mix)</strong>, we report the following results:</p>
+                            <table class="table table-hover sortable performanceTable">
+                                <thead>
+                                <tr>
+                                    <th class="sorttable_nosort" scope="col">Rank</th>
+                                    <th class="sorttable_nosort" scope="col">Model</th>
+                                    <th scope="col">UA</th>
+                                    <th scope="col">WA</th>
+                                    <th scope="col">F1</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Whisper large v3</td>
+                                    <td>61.14</td>
+                                    <td>71.52</td>
+                                    <td>62.08</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>WavLM large</td>
+                                    <td>56.31</td>
+                                    <td>65.91</td>
+                                    <td>56.83</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>HuBERT large</td>
+                                    <td>53.33</td>
+                                    <td>63.00</td>
+                                    <td>54.14</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>data2vec 2.0 large</td>
+                                    <td>52.18</td>
+                                    <td>62.35</td>
+                                    <td>52.64</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>HuBERT base</td>
+                                    <td>48.69</td>
+                                    <td>59.78</td>
+                                    <td>49.72</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>WavLM base</td>
+                                    <td>46.38</td>
+                                    <td>58.05</td>
+                                    <td>47.35</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>data2vec large</td>
+                                    <td>46.95</td>
+                                    <td>56.36</td>
+                                    <td>47.33</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>data2vec 2.0 base</td>
+                                    <td>46.00</td>
+                                    <td>57.57</td>
+                                    <td>46.62</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>wav2vec 2.0 base</td>
+                                    <td>48.99</td>
+                                    <td>59.12</td>
+                                    <td>49.78</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>data2vec base</td>
+                                    <td>37.66</td>
+                                    <td>50.79</td>
+                                    <td>38.26</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+        </div>
+
+        <br/>
+    </body>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/sorttable.js"></script>
+    <script src="js/leaderboard_render.js"></script>
+</html>

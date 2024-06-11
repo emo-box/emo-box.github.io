@@ -9,124 +9,9 @@
         <meta name="description" content="EmoBox: Multilingual Multi-corpus Speech Emotion Recognition
         Toolkit and Benchmark">
         <meta name="keywords" content="Speech emotion recognition, Toolkit, Benchmark, Cross-corpus">
-        <meta name="author" content="EmoBox">
-        <script type="application/ld+json">
-            {
-                "@context":"https://schema.org/",
-                "@type":"Dataset",
-                "name":"VALUE Benchmark",
-                "description":"A Comprehensive Benchmark for Video-And-Language Understanding Evaluation.",
-                "url":"https://value-leaderboard.github.io/",
-                "keywords":[
-                   "MACHINE LEARNING > VIDEO RETRIEVAL",
-                   "MACHINE LEARNING > VIDEO CAPTIONING",
-                   "MACHINE LEARNING > VIDEO QUESTION ANSWERING"
-                ],
-                "license" : "https://github.com/VALUE-Leaderboard/DataRelease/blob/main/DATA.md#license",
-                "isAccessibleForFree" : true,
-                "hasPart" : [
-                  {
-                    "@type": "Dataset",
-                    "name": "TVQA",
-                    "description": "Video question answering dataset based on 6 popular TV shows",
-                    "license" : "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-                    "creator":{
-                       "@type":"Organization",
-                       "name": "University of North Carolina at Chapel Hill"
-                    }
-                  },
-                  {
-                    "@type": "Dataset",
-                    "name": "TVR",
-                    "description": "Video moment retrieval dataset based on 6 popular TV shows",
-                    "license" : "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-                    "creator":{
-                       "@type":"Organization",
-                       "name": "University of North Carolina at Chapel Hill"
-                    }
-                  },
-                  {
-                    "@type": "Dataset",
-                    "name": "TVC",
-                    "description": "Video captioning dataset based on 6 popular TV shows",
-                    "license" : "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-                    "creator":{
-                       "@type":"Organization",
-                       "name": "University of North Carolina at Chapel Hill"
-                    }
-                  }, 
-                  {
-                    "@type": "Dataset",
-                    "name": "VLEP",
-                    "description": "Video event prediction dataset based on TV show and YouTube Vlog videos",
-                    "license" : "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-                    "creator":{
-                       "@type":"Organization",
-                       "name": "University of North Carolina at Chapel Hill"
-                    }
-                  },                  
-                  {
-                    "@type": "Dataset",
-                    "name": "VIOLIN",
-                    "description": "Video-and-language inference dataset based on TV show and movie videos",
-                    "license" : "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-                    "creator":{
-                       "@type":"Organization",
-                       "name": "CMU and Microsoft"
-                    }
-                  },     
-                  {
-                    "@type": "Dataset",
-                    "name": "How2R",
-                    "description": "Video moment retrieval dataset based on YouTube videos",
-                    "license" : "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-                    "creator":{
-                       "@type":"Organization",
-                       "name": "Microsoft"
-                    }
-                  },    
-                  {
-                    "@type": "Dataset",
-                    "name": "How2QA",
-                    "description": "Video question answering dataset based on YouTube videos",
-                    "license" : "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-                    "creator":{
-                       "@type":"Organization",
-                       "name": "Microsoft"
-                    }
-                  },        
-                  {
-                    "@type": "Dataset",
-                    "name": "YouCookII",
-                    "description": "Video captioning and retrieval dataset based on YouTube cooking videos",
-                    "license" : "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-                    "creator":{
-                       "@type":"Organization",
-                       "name": "University of Michigan, Ann Arbor"
-                    }
-                  },        
-                  {
-                    "@type": "Dataset",
-                    "name": "VATEX",
-                    "description": "Video captioning and retrieval dataset based on YouTube videos",
-                    "license" : "https://creativecommons.org/licenses/by/4.0/",
-                    "creator":{
-                       "@type":"Organization",
-                       "name": "University of California, Santa Barbara and ByteDance AI Lab"
-                    }
-                  }                                   
-                ],
-                "distribution":[
-                   {
-                      "@type":"DataDownload",
-                      "contentUrl":"https://github.com/VALUE-Leaderboard/DataRelease"
-                   }
-                ]
-              }
-        </script>        
+        <meta name="author" content="EmoBox">     
 
-
-        <link rel="icon" href="image/favicon.ico">
+        <link rel="icon" href="image/logo.png">
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/fonts.css">
@@ -156,7 +41,10 @@
                             <a class="nav-link" href="tasks.html">Tasks</a>
                         </li> -->
                         <li class="nav-item">
-                            <a class="nav-link" href="leaderboard.html">Leaderboard</a>
+                            <a class="nav-link" href="leaderboard1.html">Intra-corpus Track</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="leaderboard2.html">Cross-corpus Track</a>
                         </li>
                         <!-- <li class="nav-item">
                             <a class="nav-link" href="challenge_2021.html">Challenge</a>
@@ -193,7 +81,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">      
-                    <p><b>EmoBox</b>, a groundbreaking multilingual multi-corpus speech emotion recognition toolkit designed to streamline research in this field. EmoBox is accompanied by a meticulously curated benchmark tailored for both intra-corpus and cross-corpus evaluation settings.</p>
+                    <p><b>EmoBox</b>, a groundbreaking multilingual multi-corpus speech emotion recognition (SER) toolkit designed to streamline research in this field. EmoBox is accompanied by a meticulously curated benchmark tailored for both intra-corpus and cross-corpus evaluation settings.</p>
 
                     EmoBox consists of: </p>
                     <ul>
@@ -210,16 +98,30 @@
         <br/>
 
         <div class="container" align="justify">
-            <div class="row">
+            <div class="column">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
                     <h4>Why EmoBox?</h4>
                     <hr>
                 </div>
             </div>
 
-            <div class="row">
+            <div class="column">
 
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 thumb">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="image/toolkit.png" class="center" style="height:5rem; width:6rem;"/>
+                            <!-- <center><span class="fa-4x" style="margin-bottom: -4px;">
+                                <i class="fas fa-trophy ms-blue"></i>
+                            </span></center> -->
+                            <br/>
+                            <center><h5 class="card-title">Powerful Toolkit</h5>
+                            <p class="card-text"><font size="3rem">Easily conduct experiments on different datasets.</font></p></center>
+                        </div>
+                    </div>
+                    <br/>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
                     <div class="card">
                         <div class="card-body">
                             <img src="image/trophy.png" class="center" style="height:5rem; width:6rem;"/>
@@ -227,8 +129,22 @@
                                 <i class="fas fa-trophy ms-blue"></i>
                             </span></center> -->
                             <br/>
-                            <center><h5 class="card-title">Leaderboard!</h5>
-                            <p class="card-text"><font size="3rem">To track the advances in SER research.</font></p></center>
+                            <center><h5 class="card-title">Leaderboard</h5>
+                            <p class="card-text"><font size="3rem">Track the advances in Speech Emotion Recognition research.</font></p></center>
+                        </div>
+                    </div>
+                    <br/>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="image/dataset.png" class="center" style="height:5rem; width:6rem;"/>
+                            <!-- <center><span class="fa-4x" style="margin-bottom: -4px;">
+                                <i class="fas fa-trophy ms-blue"></i>
+                            </span></center> -->
+                            <br/>
+                            <center><h5 class="card-title">Comprehensive Datasets</h5>
+                            <p class="card-text"><font size="3rem"><b>32</b> emotion datasets in <b>14</b> languages.</font></p></center>
                         </div>
                     </div>
                     <br/>
