@@ -80,7 +80,7 @@
         <div class="container" align="justify">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
-                    <h4>Leaderboard</h4>
+                    <h4>Leaderboard for Intra-corpus Track</h4>
                 </div>
             </div>
 
@@ -176,8 +176,10 @@
 
                     <br/>
                     <div class="tab-content" id="myTabContent">
+                        <p>Intra-corpus SER results of pre-trained speech models on 32 emotion datasets spanning 14 distinct languages with EmoBox data partitioning. The models are ranked by the Mean Weighted Average Accuracy (WA %).</p>
+                        <div class="table-responsive">
                         <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="home-tab">
-                            <p>The models are ranked by the Mean-Rank, the average of model ranks over 11 tasks. We break ties using the Meta-Ave, the average of model performance across 11 tasks. AveR, accuracy and CiDER are used as evaluation metrics for Retrieval, QA and Captioning tasks, respectively.</p>
+                            
                             <table class="table table-hover sortable  performanceTableWide" id="all_table">
                                 <col>
                                 <col>
@@ -186,71 +188,408 @@
                                 <colgroup span="4" class="wBackground"></colgroup>
                                 <colgroup span="4"></colgroup>
                                 <colgroup span="3" class="wBackground"></colgroup>
-                            <thead>
-                                <!-- <tr>
-                                <th rowspan="2" >Rank</th>
-                                <td rowspan="2" >Model</td>
-                                <td rowspan="2" >Meta-Average</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td colspan="4" >Retrieval</td>
-                                <td colspan="4" >QA</td>
-                                <td colspan="3" >Caption</td>
-                                </tr> -->
-                                <tr>
-                                    <!-- <th scope="row"></th>
-                                <td></td>
-                                <td></td> -->
-                                
-                                <th class="sorttable_nosort" scope="col">Rank</th>
-                                <th class="sorttable_nosort" scope="col">Model</th>
-                                <th scope="col">Mean-Rank</th>
-                                <th scope="col">Meta-Ave</th>
-                                <th scope="col">TVR</th>
-                                <th scope="col" >How2R</th>
-                                <th scope="col">YC2R</th>
-                                <th scope="col">VATEX-EN-R</th>
-                                <th scope="col">TVQA</th>
-                                <th scope="col">How2QA</th>
-                                <th scope="col">VIOLIN</th>
-                                <th scope="col">VLEP</th>
-                                <th scope="col">TVC</td>
-                                <th scope="col">YC2C</th>
-                                <th scope="col">VATEX-EN-C</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">
-                                        <p class="rank">-</p>
-                                        <span class="date badge badge-secondary">06/07/2021</span>
-                                    </th>
-                                    <td style="word-break:break-word;">
-                                        <b>Human</b>
-                                        <p class="institution">VALUE baseline</p>
-                                        <!-- <a href="" target="_blank">Paper</a>, <a href="" target="_blank">Code</a> -->
-                                    </td>
-                                    <td><b>-</b></td>
-                                    <td><b>-</b></td>
-
-                                    <td><b>-</b></td>
-                                    <td><b>-</b></td>
-                                    <td><b>-</b></td>
-                                    <td><b>-</b></td>
-
-                                    <td><b>89.41</b></td>
-                                    <td><b>90.32</b></td>
-                                    <td><b>91.39</b></td>
-                                    <td><b>90.50</b></td>
-
-                                    <td><b>62.89</b></td>
-                                    <td><b>-</b></td>
-                                    <td><b>62.66</b></td>
-                                </tr>
-
-                            </tbody>
+                                <thead>
+                                    <tr>
+                                        <th class="sorttable_nosort" scope="col">Rank</th>
+                                        <th class="sorttable_nosort" scope="col">Model</th>
+                                        <th scope="col">AESDD</th>
+                                        <th scope="col">ASED</th>
+                                        <th scope="col">ASVP-ESD</th>
+                                        <th scope="col">CaFE</th>
+                                        <th scope="col">CASIA</th>
+                                        <th scope="col">CREMA-D</th>
+                                        <th scope="col">EMNS</th>
+                                        <th scope="col">EmoDB</th>
+                                        <th scope="col">EmoV-DB</th>
+                                        <th scope="col">EMOVO</th>
+                                        <th scope="col">Emozionalmente</th>
+                                        <th scope="col">eNTERFACE</th>
+                                        <th scope="col">ESD</th>
+                                        <th scope="col">IEMOCAP</th>
+                                        <th scope="col">JL-Corpus</th>
+                                        <th scope="col">M3ED</th>
+                                        <th scope="col">MEAD</th>
+                                        <th scope="col">MELD</th>
+                                        <th scope="col">MER2023</th>
+                                        <th scope="col">MESD</th>
+                                        <th scope="col">MSP-Podcast</th>
+                                        <th scope="col">Oreau</th>
+                                        <th scope="col">PAVOQUE</th>
+                                        <th scope="col">Polish</th>
+                                        <th scope="col">RAVDESS</th>
+                                        <th scope="col">RESD</th>
+                                        <th scope="col">SAVEE</th>
+                                        <th scope="col">ShEMO</th>
+                                        <th scope="col">SUBESCO</th>
+                                        <th scope="col">TESS</th>
+                                        <th scope="col">TurEV-DB</th>
+                                        <th scope="col">URDU</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Whisper large v3</td>
+                                        <td>79.18</td>
+                                        <td>96.73</td>
+                                        <td>71.52</td>
+                                        <td>68.84</td>
+                                        <td>59.58</td>
+                                        <td>76.48</td>
+                                        <td>70.58</td>
+                                        <td>92.43</td>
+                                        <td>99.37</td>
+                                        <td>57.82</td>
+                                        <td>76.91</td>
+                                        <td>97.68</td>
+                                        <td>84.62</td>
+                                        <td>72.86</td>
+                                        <td>66.71</td>
+                                        <td>49.42</td>
+                                        <td>77.34</td>
+                                        <td>51.89</td>
+                                        <td>65.23</td>
+                                        <td>69.67</td>
+                                        <td>44.10</td>
+                                        <td>84.79</td>
+                                        <td>93.40</td>
+                                        <td>83.27</td>
+                                        <td>75.87</td>
+                                        <td>55.54</td>
+                                        <td>77.24</td>
+                                        <td>89.55</td>
+                                        <td>73.05</td>
+                                        <td>99.96</td>
+                                        <td>81.58</td>
+                                        <td>82.52</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>WavLM large</td>
+                                        <td>84.49</td>
+                                        <td>96.45</td>
+                                        <td>65.91</td>
+                                        <td>61.33</td>
+                                        <td>52.12</td>
+                                        <td>74.32</td>
+                                        <td>84.12</td>
+                                        <td>92.67</td>
+                                        <td>99.47</td>
+                                        <td>48.82</td>
+                                        <td>75.00</td>
+                                        <td>92.42</td>
+                                        <td>79.14</td>
+                                        <td>69.07</td>
+                                        <td>60.86</td>
+                                        <td>44.86</td>
+                                        <td>82.03</td>
+                                        <td>49.31</td>
+                                        <td>54.77</td>
+                                        <td>62.49</td>
+                                        <td>40.47</td>
+                                        <td>66.29</td>
+                                        <td>93.40</td>
+                                        <td>79.29</td>
+                                        <td>72.22</td>
+                                        <td>56.47</td>
+                                        <td>70.80</td>
+                                        <td>87.13</td>
+                                        <td>65.33</td>
+                                        <td>99.78</td>
+                                        <td>80.09</td>
+                                        <td>86.61</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>HuBERT large</td>
+                                        <td>78.90</td>
+                                        <td>96.19</td>
+                                        <td>63.00</td>
+                                        <td>58.73</td>
+                                        <td>45.30</td>
+                                        <td>73.64</td>
+                                        <td>74.28</td>
+                                        <td>90.26</td>
+                                        <td>99.40</td>
+                                        <td>45.74</td>
+                                        <td>69.83</td>
+                                        <td>88.17</td>
+                                        <td>75.85</td>
+                                        <td>66.69</td>
+                                        <td>56.62</td>
+                                        <td>44.49</td>
+                                        <td>77.84</td>
+                                        <td>46.37</td>
+                                        <td>50.49</td>
+                                        <td>53.67</td>
+                                        <td>40.02</td>
+                                        <td>64.35</td>
+                                        <td>92.76</td>
+                                        <td>70.20</td>
+                                        <td>70.29</td>
+                                        <td>51.51</td>
+                                        <td>75.05</td>
+                                        <td>83.35</td>
+                                        <td>64.53</td>
+                                        <td>99.86</td>
+                                        <td>72.08</td>
+                                        <td>81.75</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>HuBERT base</td>
+                                        <td>82.35</td>
+                                        <td>94.13</td>
+                                        <td>59.78</td>
+                                        <td>54.16</td>
+                                        <td>47.23</td>
+                                        <td>70.98</td>
+                                        <td>76.25</td>
+                                        <td>87.73</td>
+                                        <td>98.77</td>
+                                        <td>46.10</td>
+                                        <td>66.30</td>
+                                        <td>79.11</td>
+                                        <td>72.41</td>
+                                        <td>63.10</td>
+                                        <td>51.11</td>
+                                        <td>42.55</td>
+                                        <td>75.71</td>
+                                        <td>45.47</td>
+                                        <td>49.80</td>
+                                        <td>47.48</td>
+                                        <td>38.70</td>
+                                        <td>52.80</td>
+                                        <td>92.19</td>
+                                        <td>69.40</td>
+                                        <td>66.21</td>
+                                        <td>52.34</td>
+                                        <td>59.85</td>
+                                        <td>81.17</td>
+                                        <td>57.89</td>
+                                        <td>99.62</td>
+                                        <td>73.26</td>
+                                        <td>88.41</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>WavLM base</td>
+                                        <td>79.08</td>
+                                        <td>94.31</td>
+                                        <td>58.05</td>
+                                        <td>52.33</td>
+                                        <td>47.25</td>
+                                        <td>69.49</td>
+                                        <td>69.71</td>
+                                        <td>87.12</td>
+                                        <td>98.49</td>
+                                        <td>42.39</td>
+                                        <td>63.02</td>
+                                        <td>88.27</td>
+                                        <td>72.90</td>
+                                        <td>63.94</td>
+                                        <td>53.79</td>
+                                        <td>42.79</td>
+                                        <td>72.86</td>
+                                        <td>44.71</td>
+                                        <td>48.71</td>
+                                        <td>43.52</td>
+                                        <td>37.38</td>
+                                        <td>58.06</td>
+                                        <td>90.84</td>
+                                        <td>69.31</td>
+                                        <td>62.10</td>
+                                        <td>45.09</td>
+                                        <td>67.05</td>
+                                        <td>78.76</td>
+                                        <td>57.06</td>
+                                        <td>99.10</td>
+                                        <td>70.51</td>
+                                        <td>82.82</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>data2vec 2.0 large</td>
+                                        <td>72.34</td>
+                                        <td>94.28</td>
+                                        <td>62.35</td>
+                                        <td>58.02</td>
+                                        <td>45.57</td>
+                                        <td>69.27</td>
+                                        <td>58.60</td>
+                                        <td>80.41</td>
+                                        <td>98.32</td>
+                                        <td>45.88</td>
+                                        <td>64.10</td>
+                                        <td>94.02</td>
+                                        <td>76.81</td>
+                                        <td>56.23</td>
+                                        <td>65.14</td>
+                                        <td>43.02</td>
+                                        <td>75.24</td>
+                                        <td>47.72</td>
+                                        <td>46.81</td>
+                                        <td>48.45</td>
+                                        <td>41.33</td>
+                                        <td>64.88</td>
+                                        <td>92.07</td>
+                                        <td>74.00</td>
+                                        <td>71.63</td>
+                                        <td>44.64</td>
+                                        <td>78.59</td>
+                                        <td>82.68</td>
+                                        <td>66.45</td>
+                                        <td>99.54</td>
+                                        <td>64.13</td>
+                                        <td>78.10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>data2vec 2.0 base</td>
+                                        <td>46.68</td>
+                                        <td>93.99</td>
+                                        <td>57.57</td>
+                                        <td>51.67</td>
+                                        <td>43.31</td>
+                                        <td>65.48</td>
+                                        <td>48.39</td>
+                                        <td>75.86</td>
+                                        <td>96.09</td>
+                                        <td>42.96</td>
+                                        <td>56.22</td>
+                                        <td>90.80</td>
+                                        <td>73.40</td>
+                                        <td>53.19</td>
+                                        <td>54.04</td>
+                                        <td>41.42</td>
+                                        <td>70.64</td>
+                                        <td>46.65</td>
+                                        <td>46.64</td>
+                                        <td>44.85</td>
+                                        <td>39.97</td>
+                                        <td>59.73</td>
+                                        <td>87.82</td>
+                                        <td>75.75</td>
+                                        <td>64.84</td>
+                                        <td>44.03</td>
+                                        <td>75.50</td>
+                                        <td>79.03</td>
+                                        <td>57.97</td>
+                                        <td>98.55</td>
+                                        <td>63.69</td>
+                                        <td>69.97</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>data2vec large</td>
+                                        <td>45.69</td>
+                                        <td>88.31</td>
+                                        <td>56.36</td>
+                                        <td>42.85</td>
+                                        <td>37.65</td>
+                                        <td>63.51</td>
+                                        <td>48.96</td>
+                                        <td>61.95</td>
+                                        <td>94.93</td>
+                                        <td>35.66</td>
+                                        <td>53.92</td>
+                                        <td>89.46</td>
+                                        <td>72.01</td>
+                                        <td>51.11</td>
+                                        <td>48.87</td>
+                                        <td>38.73</td>
+                                        <td>68.44</td>
+                                        <td>45.74</td>
+                                        <td>40.27</td>
+                                        <td>36.61</td>
+                                        <td>37.45</td>
+                                        <td>49.12</td>
+                                        <td>84.89</td>
+                                        <td>68.05</td>
+                                        <td>59.50</td>
+                                        <td>31.57</td>
+                                        <td>71.45</td>
+                                        <td>74.09</td>
+                                        <td>53.06</td>
+                                        <td>96.89</td>
+                                        <td>55.11</td>
+                                        <td>64.81</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>data2vec base</td>
+                                        <td>50.03</td>
+                                        <td>86.34</td>
+                                        <td>50.79</td>
+                                        <td>42.36</td>
+                                        <td>34.72</td>
+                                        <td>57.78</td>
+                                        <td>34.58</td>
+                                        <td>60.01</td>
+                                        <td>93.61</td>
+                                        <td>32.47</td>
+                                        <td>48.97</td>
+                                        <td>91.62</td>
+                                        <td>65.05</td>
+                                        <td>53.20</td>
+                                        <td>49.29</td>
+                                        <td>37.32</td>
+                                        <td>66.05</td>
+                                        <td>45.57</td>
+                                        <td>43.06</td>
+                                        <td>34.35</td>
+                                        <td>37.15</td>
+                                        <td>55.67</td>
+                                        <td>85.11</td>
+                                        <td>71.31</td>
+                                        <td>52.22</td>
+                                        <td>37.90</td>
+                                        <td>78.25</td>
+                                        <td>70.07</td>
+                                        <td>46.22</td>
+                                        <td>94.67</td>
+                                        <td>52.58</td>
+                                        <td>65.42</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>wav2vec 2.0 base</td>
+                                        <td>67.65</td>
+                                        <td>88.63</td>
+                                        <td>59.12</td>
+                                        <td>42.47</td>
+                                        <td>39.56</td>
+                                        <td>61.90</td>
+                                        <td>65.27</td>
+                                        <td>83.14</td>
+                                        <td>98.03</td>
+                                        <td>31.07</td>
+                                        <td>56.69</td>
+                                        <td>64.19</td>
+                                        <td>69.17</td>
+                                        <td>57.73</td>
+                                        <td>45.27</td>
+                                        <td>43.20</td>
+                                        <td>73.57</td>
+                                        <td>45.17</td>
+                                        <td>46.78</td>
+                                        <td>62.89</td>
+                                        <td>37.15</td>
+                                        <td>41.06</td>
+                                        <td>91.23</td>
+                                        <td>67.35</td>
+                                        <td>55.40</td>
+                                        <td>53.39</td>
+                                        <td>49.83</td>
+                                        <td>78.96</td>
+                                        <td>51.25</td>
+                                        <td>97.92</td>
+                                        <td>68.01</td>
+                                        <td>87.50</td>
+                                    </tr>
+                                </tbody>
                             </table>
+                        </div>
                         </div>
                         <div class="tab-pane fade" id="aesdd" role="tabpanel" aria-labelledby="aesdd-tab">
                             <p>For the dataset <strong>AESDD (el)</strong>, we report the following results:</p>
