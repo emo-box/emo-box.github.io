@@ -16,6 +16,50 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/fonts.css">
         <link rel="stylesheet" href="css/custom.css">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <style>
+            .table-container {
+                width: 100%;
+                overflow-x: auto; /* Enables horizontal scrolling */
+                position: relative;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            th, td {
+                padding: 8px 12px;
+                text-align: left;
+                border: 1px solid #ddd;
+                white-space: nowrap;
+            }
+
+            th {
+                background: #f8f9fa;
+                z-index: 1;
+                position: sticky;
+                top: 0;
+            }
+
+            .fixed-column {
+                position: sticky;
+                left: 0;
+                background: #f9f9f9;
+                z-index: 2;
+                border-right: 1px solid #ddd;
+            }
+
+            .fixed-column-2 {
+                position: sticky;
+                left: 100px; /* Adjust this value to match the width of the first column */
+                background: #f9f9f9;
+                z-index: 2;
+                border-right: 1px solid #ddd;
+            }
+        </style>
     </head>
 
     <body>
