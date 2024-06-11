@@ -131,7 +131,7 @@ html {
     padding: 0;
     list-style-type: none;
   }
-  
+
   .li-paper {
     margin: 1rem 0;
   }
@@ -150,7 +150,7 @@ html {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 84%;
   }
   
   /*Card*/
